@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link Preview Settings -->
+    <title>Club388 Web Portal</title>
+    <meta name="description" content="Welcome to Club388 Web Portal.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Club388 Web Portal">
+    <meta property="og:description" content="Welcome to Club388 Web Portal. Select your player or agent portal.">
+    <meta property="og:image" content="https://lh3.googleusercontent.com/d/1zJvfAOMT5mgvSxPkHbfBI4TgNAWmb-oY">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Club388 Web Portal">
+    <meta property="twitter:description" content="Welcome to Club388 Web Portal. Select your player or agent portal.">
+    <meta property="twitter:image" content="https://lh3.googleusercontent.com/d/1zJvfAOMT5mgvSxPkHbfBI4TgNAWmb-oY">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 24px;
+        }
+        body {
+            background: radial-gradient(circle at top right, #4338ca, #1e1b4b, #000000);
+            min-height: 100vh;
+            color: white;
+            font-family: sans-serif;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        .hidden-page { display: none !important; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); border-radius: 10px; }
+    </style>
+</head>
+<body class="p-4 flex items-center justify-center">
+
+    <div id="toast" class="fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-green-500/90 text-white px-6 py-3 rounded-full opacity-0 pointer-events-none z-50 text-sm">ကော်ပီကူးပြီးပါပြီ</div>
+
+    <!-- Home Page -->
+    <div id="home" class="w-full max-w-sm glass p-8 text-center">
+        <img src="https://lh3.googleusercontent.com/d/1zJvfAOMT5mgvSxPkHbfBI4TgNAWmb-oY" alt="Logo" class="w-32 h-32 mx-auto mb-6 object-contain">
+        <h1 class="text-2xl font-bold mb-8">Club388 Web Portal</h1>
+        <button onclick="showPage('player')" class="w-full p-4 mb-4 glass hover:bg-white/20 transition">🎮 Player Portal</button>
+        <button onclick="showPage('agent')" class="w-full p-4 glass hover:bg-white/20 transition">💼 Agent Portal</button>
+    </div>
+
+    <!-- Player Page -->
+    <div id="player" class="hidden-page w-full max-w-sm glass p-6 h-[90vh] flex flex-col">
+        <button onclick="showPage('home')" class="mb-4 text-sm text-gray-400">← Back</button>
+        <h2 class="text-xl font-bold mb-4 text-center">Player Portal</h2>
+        <div class="flex p-1 bg-black/30 rounded-lg mb-4">
+            <button onclick="switchTab('mmk')" id="btn-mmk" class="flex-1 py-2 bg-orange-500 rounded-md text-sm font-bold">MMK</button>
+            <button onclick="switchTab('thb')" id="btn-thb" class="flex-1 py-2 rounded-md text-sm font-bold">THB</button>
+        </div>
+        <div id="content-mmk" class="flex-grow overflow-y-auto space-y-2">
+            <div class="flex gap-2"><a href="https://www.388vip3.com" target="_blank" class="flex-grow p-3 bg-black/30 rounded-lg text-sm">388vip3.com</a><button onclick="copy('https://www.388vip3.com')" class="px-3 bg-black/30 rounded-lg">📋</button></div>
+            <div class="flex gap-2"><a href="https://www.onclub388.site" target="_blank" class="flex-grow p-3 bg-black/30 rounded-lg text-sm">onclub388.site</a><button onclick="copy('https://www.onclub388.site')" class="px-3 bg-black/30 rounded-lg">📋</button></div>
+            <div class="flex gap-2"><a href="https://www.onclub388.space" target="_blank" class="flex-grow p-3 bg-black/30 rounded-lg text-sm">onclub388.space</a><button onclick="copy('https://www.onclub388.space')" class="px-3 bg-black/30 rounded-lg">📋</button></div>
+            <div class="flex gap-2"><a href="https://www.mmk022.com" target="_blank" class="flex-grow p-3 bg-black/30 rounded-lg text-sm">mmk022.com</a><button onclick="copy('https://www.mmk022.com')" class="px-3 bg-black/30 rounded-lg">📋</button></div>
+            <div class="flex gap-2"><a href="https://www.onclub388.online" target="_blank" class="flex-grow p-3 bg-black/30 rounded-lg text-sm">onclub388.online</a><button onclick="copy('https://www.onclub388.online')" class="px-3 bg-black/30 rounded-lg">📋</button></div>
+            <div class="flex gap-2"><a href="https://www.mmk333.com" target="_blank" class="flex-grow p-3 bg-black/30 rounded-lg text-sm">mmk333.com</a><button onclick="copy('https://www.mmk333.com')" class="px-3 bg-black/30 rounded-lg">📋</button></div>
+            <div class="flex gap-2"><a href="https://www.388vip1.com" target="_blank" class="flex-grow p-3 bg-black/30 rounded-lg text-sm">388vip1.com</a><button onclick="copy('https://www.388vip1.com')" class="px-3 bg-black/30 rounded-lg">📋</button></div>
+            <div class="flex gap-2"><a href="https://www.388vip2.com" target="_blank" class="flex-grow p-3 bg-black/30 rounded-lg text-sm">388vip2.com</a><button onclick="copy('https://www.388vip2.com')" class="px-3 bg-black/30 rounded-lg">📋</button></div>
+            <div class="flex gap-2"><a href="https://www.club388.live" target="_blank" class="flex-grow p-3 bg-black/30 rounded-lg text-sm">club388.live</a><button onclick="copy('https://www.club388.live')" class="px-3 bg-black/30 rounded-lg">📋</button></div>
+            <div class="flex gap-2"><a href="https://www.mmk011.com" target="_blank" class="flex-grow p-3 bg-black/30 rounded-lg text-sm">mmk011.com</a><button onclick="copy('https://www.mmk011.com')" class="px-3 bg-black/30 rounded-lg">📋</button></div>
+            <div class="flex gap-2"><a href="https://www.cpas888.com" target="_blank" class="flex-grow p-3 bg-black/30 rounded-lg text-sm">cpas888.com</a><button onclick="copy('https://www.cpas888.com')" class="px-3 bg-black/30 rounded-lg">📋</button></div>
+            <div class="flex gap-2"><a href="https://www.onclub388.store" target="_blank" class="flex-grow p-3 bg-black/30 rounded-lg text-sm">onclub388.store</a><button onclick="copy('https://www.onclub388.store')" class="px-3 bg-black/30 rounded-lg">📋</button></div>
+            <div class="flex gap-2"><a href="https://www.club388.co" target="_blank" class="flex-grow p-3 bg-black/30 rounded-lg text-sm">club388.co</a><button onclick="copy('https://www.club388.co')" class="px-3 bg-black/30 rounded-lg">📋</button></div>
+            <div class="flex gap-2"><a href="https://www.club388.net" target="_blank" class="flex-grow p-3 bg-black/30 rounded-lg text-sm">club388.net</a><button onclick="copy('https://www.club388.net')" class="px-3 bg-black/30 rounded-lg">📋</button></div>
+            <div class="flex gap-2"><a href="https://www.club388.com" target="_blank" class="flex-grow p-3 bg-black/30 rounded-lg text-sm">club388.com</a><button onclick="copy('https://www.club388.com')" class="px-3 bg-black/30 rounded-lg">📋</button></div>
+        </div>
+        <div id="content-thb" class="hidden-page flex-grow overflow-y-auto space-y-2">
+            <div class="flex gap-2"><a href="https://www.thai388.com" target="_blank" class="flex-grow p-3 bg-black/30 rounded-lg text-sm">thai388.com</a><button onclick="copy('https://www.thai388.com')" class="px-3 bg-black/30 rounded-lg">📋</button></div>
+            <div class="flex gap-2"><a href="https://www.super3388.com" target="_blank" class="flex-grow p-3 bg-black/30 rounded-lg text-sm">super3388.com</a><button onclick="copy('https://www.super3388.com')" class="px-3 bg-black/30 rounded-lg">📋</button></div>
+            <div class="flex gap-2"><a href="https://www.ksk222.com" target="_blank" class="flex-grow p-3 bg-black/30 rounded-lg text-sm">ksk222.com</a><button onclick="copy('https://www.ksk222.com')" class="px-3 bg-black/30 rounded-lg">📋</button></div>
+            <div class="flex gap-2"><a href="https://www.ksk333.com" target="_blank" class="flex-grow p-3 bg-black/30 rounded-lg text-sm">ksk333.com</a><button onclick="copy('https://www.ksk333.com')" class="px-3 bg-black/30 rounded-lg">📋</button></div>
+            <div class="flex gap-2"><a href="https://www.scbvip.com" target="_blank" class="flex-grow p-3 bg-black/30 rounded-lg text-sm">scbvip.com</a><button onclick="copy('https://www.scbvip.com')" class="px-3 bg-black/30 rounded-lg">📋</button></div>
+            <div class="flex gap-2"><a href="https://www.siam388.com" target="_blank" class="flex-grow p-3 bg-black/30 rounded-lg text-sm">siam388.com</a><button onclick="copy('https://www.siam388.com')" class="px-3 bg-black/30 rounded-lg">📋</button></div>
+            <div class="flex gap-2"><a href="https://www.happy679.com" target="_blank" class="flex-grow p-3 bg-black/30 rounded-lg text-sm">happy679.com</a><button onclick="copy('https://www.happy679.com')" class="px-3 bg-black/30 rounded-lg">📋</button></div>
+            <div class="flex gap-2"><a href="https://www.thb388.com" target="_blank" class="flex-grow p-3 bg-black/30 rounded-lg text-sm">thb388.com</a><button onclick="copy('https://www.thb388.com')" class="px-3 bg-black/30 rounded-lg">📋</button></div>
+            <div class="flex gap-2"><a href="https://www.lucky679.com" target="_blank" class="flex-grow p-3 bg-black/30 rounded-lg text-sm">lucky679.com</a><button onclick="copy('https://www.lucky679.com')" class="px-3 bg-black/30 rounded-lg">📋</button></div>
+        </div>
+    </div>
+
+    <!-- Agent Page -->
+    <div id="agent" class="hidden-page w-full max-w-sm glass p-6">
+        <button onclick="showPage('home')" class="mb-4 text-sm text-gray-400">← Back</button>
+        <h2 class="text-xl font-bold mb-4 text-center">Agent</h2>
+        <div class="space-y-2">
+            <div class="flex gap-2"><a href="https://club-cb.com" target="_blank" class="flex-grow p-3 bg-black/30 rounded-lg text-sm">club-cb.com</a><button onclick="copy('https://club-cb.com')" class="px-3 bg-black/30 rounded-lg">📋</button></div>
+            <div class="flex gap-2"><a href="https://abkool.com" target="_blank" class="flex-grow p-3 bg-black/30 rounded-lg text-sm">abkool.com</a><button onclick="copy('https://abkool.com')" class="px-3 bg-black/30 rounded-lg">📋</button></div>
+            <div class="flex gap-2"><a href="https://club-cb.net" target="_blank" class="flex-grow p-3 bg-black/30 rounded-lg text-sm">club-cb.net</a><button onclick="copy('https://club-cb.net')" class="px-3 bg-black/30 rounded-lg">📋</button></div>
+            <div class="flex gap-2"><a href="https://ag.club388.co" target="_blank" class="flex-grow p-3 bg-black/30 rounded-lg text-sm">ag.club388.co</a><button onclick="copy('https://ag.club388.co')" class="px-3 bg-black/30 rounded-lg">📋</button></div>
+            <div class="flex gap-2"><a href="https://ag.club388.net" target="_blank" class="flex-grow p-3 bg-black/30 rounded-lg text-sm">ag.club388.net</a><button onclick="copy('https://ag.club388.net')" class="px-3 bg-black/30 rounded-lg">📋</button></div>
+        </div>
+    </div>
+
+    <script>
+        function showPage(p) {
+            document.getElementById('home').classList.add('hidden-page');
+            document.getElementById('player').classList.add('hidden-page');
+            document.getElementById('agent').classList.add('hidden-page');
+            document.getElementById(p).classList.remove('hidden-page');
+        }
+        function switchTab(t) {
+            document.getElementById('content-mmk').classList.toggle('hidden-page', t !== 'mmk');
+            document.getElementById('content-thb').classList.toggle('hidden-page', t !== 'thb');
+            document.getElementById('btn-mmk').classList.toggle('bg-orange-500', t === 'mmk');
+            document.getElementById('btn-thb').classList.toggle('bg-orange-500', t === 'thb');
+        }
+        function copy(text) {
+            navigator.clipboard.writeText(text);
+            const t = document.getElementById('toast');
+            t.classList.remove('opacity-0');
+            t.classList.add('opacity-100');
+            setTimeout(() => { t.classList.add('opacity-0'); }, 2000);
+        }
+    </script>
+</body>
+</html>
